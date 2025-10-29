@@ -19,6 +19,8 @@ dev = [
     "black>=23.3.0",
     "flake8>=5.0.4",
     "isort>=5.11.5",
+    "mkdocs>=1.2.4",
+    "mkdocstrings[python]>=0.21.2",
 ]
 
 [project.scripts]
