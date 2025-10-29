@@ -21,6 +21,8 @@ dev = [
     "isort>=5.11.5",
     "mkdocs>=1.2.4",
     "mkdocstrings[python]>=0.21.2",
+    "mypy>=1.4.1",
+    "pre-commit>=2.21.0",
 ]
 
 [project.scripts]
@@ -35,3 +37,30 @@ package = true
 
 [tool.uv.env]
 PYTHONPATH = "src" # then use uv run python -m unittest
+
+[tool.black]
+line-length = 88
+exclude = '''
+/(
+      .eggs         
+    | .git          
+    | .hg
+    | .mypy_cache
+    | .tox
+    | .venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+virtual_env = ".venv"
+
+[flake8]
+max-line-length = 88
