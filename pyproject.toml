@@ -30,3 +30,6 @@ build-backend = "uv_build"
 
 [tool.uv]
 package = true
+
+[tool.uv.env]
+PYTHONPATH = "src" # then use uv run python -m unittest
