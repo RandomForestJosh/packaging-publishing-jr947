@@ -1,0 +1,13 @@
+site_name: Cancer Prediction
+site_url: https://github.com/RandomForestJosh/cancer-prediction-jr947
+repo_url: https://github.com/RandomForestJosh/cancer-prediction-jr947
+nav:
+  - Home: index.md
+  - cancer-prediction-jr947:
+    - cancer model: cancer-prediction-jr947/cancer_model.md
+    - streamlit app: cancer-prediction-jr947/streamlit_app.md
+theme: readthedocs
+plugins:
+  - mkdocstrings
+watch:
+  - .  # reload docs for file changes
